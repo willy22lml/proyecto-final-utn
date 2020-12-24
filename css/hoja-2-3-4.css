@@ -1,0 +1,110 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background: url(img/fondos/fondo-loske.jpg);
+}
+.nav{
+    width: 100%;
+    height: 120px;
+    background:url(img/fondos/fondo-menu.jpg);
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+}
+.menu-1{
+    width: 10%;
+    align-self: flex-start;
+}
+.menu-2{
+    width: 70%;
+}
+#menu{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.botones{
+    width: 200px;
+    height: 50px;
+}
+.botones:hover{
+    width: 250px;
+    height: 70px;
+}
+.loske{
+    align-self: flex-start;
+    width: 100px;
+    height: 50px;
+    position: fixed;
+    z-index: 1000;
+}
+.loske:hover{
+    width: 110px;
+    height: 60px;
+}
+section{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.duelos,.logo{
+    width: 50%;
+}
+.inscripcion{
+    color: seashell;
+}
+#contacto{
+    padding: 10%;
+    height: 100vh;
+    background: url(img/logos/loske-mala-señal.gif);
+    font-family: 'Nova Flat', cursive;
+    color: rgb(255, 255, 255);
+    text-shadow: -2px -2px 0px #000000, 2px -2px 0px #000000, -2px 2px 0px #000000, 2px 2px 0px #000000;
+    font-size: 20px;
+    text-align: center; 
+}
+.container-form{
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 15px;
+}
+input,textarea{
+    width: 100%;
+    background-color: rgb(42, 253, 0);
+    border: 5px solid rgb(126, 3, 207);
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 900px) and (min-width:600px){
+    .nav{
+        height: 200px;
+    }
+    .menu-2{
+        width: 100%;
+    }
+
+}
+@media screen and (max-width: 599px) and (min-width:0px){
+    .nav{
+        height: 250px;
+    }
+    .menu-2{
+        width: 100%;
+    }
+    #menu{
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .duelos,.logo{
+        width: 100%;
+    }
+}

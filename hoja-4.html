@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Loske</title>
+        <link rel="icon" href="css/img/logos/logo-loske.png">
+        <meta charset="utf-8">
+        <!--meta responsive desing-->
+        <meta name="viewport" content="width=device-width,initial-scale=1"> 
+        <!--etiqueta iconos-->
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <!--etiqueta normalize-->
+        <link rel="stylesheet" type="text/css" href="css/normalize.css">
+        <!--etiqueta de estilos-->
+        <link rel="stylesheet" type="text/css" href="css/hoja-2-3-4.css">
+    </head>
+    <body>
+        <header>
+            <nav class="nav">
+                <div class="menu-1">
+                    <a href="hoja-2.html"> <img class="loske" src="css/img/logos/loske.png"></a>
+                </div>
+                <div class="menu-2">
+                    <ul id="menu">
+                        <li><a href="index.html"> <img class="botones" src="css/img/botones/informacion.png"></a></li>
+                        <li><a href="hoja-1.html"> <img class="botones" src="css/img/botones/torneos.png"></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <article class="inscripcion">
+            <section class="reglas">
+                <h1>Terminos y Condiciones</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur est facere, amet odio, repellat quasi labore, voluptatum necessitatibus distinctio pariatur nemo optio nobis id sapiente ipsum adipisci reiciendis suscipit aperiam.</p>
+                <form action="mailto:kevinwilliamskjw@gmail.com" method="POST">
+                    <span>aceptar terminos y condiciones</span>
+                    <input required type="checkbox" name="acepto-reglas">
+                </form>
+            </section>
+            <section class="hs">
+                <h2>Horarios</h2>
+                        <select  name="horarios" required>
+                            <option value="">seleccione</option>
+                            <option value="13pm-14pm">13pm-14pm</option>
+                            <option value="15pm-16pm">15pm-16pm</option>
+                            <option value="10pm-11pm">10pm-11pm</option>  
+            </section>
+            <section id="contacto">
+                <form method="POST" netlify action="mailto:kevinwilliamskjw@gmail.com">
+                    <div class="nombre">
+                    <span>Nombre completo</span>
+                    <input type="text" required placeholder="nombre completo" name="nombre">
+                    </div>
+                    <div class="nombre-equipo">
+                    <span>Nombre del equipo</span>
+                    <input type="text" required placeholder="nombre del equipo" name="nombre-equipo">
+                    </div>
+                    <div class="email">
+                    <span>Correo electronico</span>
+                    <input type="email" required placeholder="correo electronico" name="correo">
+                    </div>
+                    <div class="msj">
+                    <span>escriba su consulta o sugerencia</span>
+                    <textarea name="consulta" placeholder="escriba su mensaje"> </textarea>
+                    </div>
+                    <div>
+                    <input type="submit">
+                    </div>
+                </form>
+            </section>
+        </article>
